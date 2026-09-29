@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Buscar viaje | UniTransport</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header><a class="logo" href="estudiante.html">🚗 UniTransport <span>Share</span></a><nav><a href="estudiante.html">Inicio</a><a href="mis-viajes.html">Mis viajes</a><a href="perfil.html">Perfil</a></nav></header>
+<main class="page-container">
+  <div class="page-title"><span class="eyebrow">Paso 1</span><h1>Busca tu viaje</h1><p>Indica dónde y cuándo quieres viajar.</p></div>
+  <form class="search-panel" id="searchForm">
+    <div class="direction-toggle"><button type="button" class="direction active" data-value="universidad">🏫 Ir a la Universidad</button><button type="button" class="direction" data-value="casa">🏠 Regresar a Casa</button></div>
+    <div class="form-grid">
+      <div><label>Punto de recojo</label><input id="origin" required placeholder="Ej. Av. Ferrocarril 123"></div>
+      <div><label>Destino</label><input id="destination" required value="Universidad Continental" placeholder="Destino"></div>
+      <div><label>Fecha</label><input id="date" type="date" required></div>
+      <div><label>Hora aproximada</label><input id="time" type="time" required></div>
+      <div><label>Número de pasajeros</label><select><option>1 pasajero</option><option>2 pasajeros</option><option>3 pasajeros</option></select></div>
+      <div><label>Radio de búsqueda</label><select><option>Hasta 2 km</option><option>Hasta 5 km</option><option>Hasta 10 km</option></select></div>
+    </div>
+    <div class="smart-message">🤖 <b>Agrupamiento inteligente:</b> buscaremos estudiantes con rutas y horarios similares para reducir desvíos y costos.</div>
+    <button class="btn" type="submit">🔎 Buscar viajes</button>
+  </form>
+</main>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Crear cuenta | UniTransport</title><link rel="stylesheet" href="css/style.css"></head>
+<body class="auth-body">
+<div class="auth-card wide">
+  <a class="logo auth-logo" href="index.html">🚗 UniTransport <span>Share</span></a>
+  <h1>Crear cuenta</h1><p class="muted">Regístrate con tus datos universitarios.</p>
+  <form id="registerForm">
+    <div class="form-grid">
+      <div><label>Nombre completo</label><input required placeholder="José Collazos"></div>
+      <div><label>Código universitario</label><input required placeholder="2026XXXX"></div>
+      <div><label>Correo institucional</label><input type="email" required placeholder="nombre@universidad.edu.pe"></div>
+      <div><label>Teléfono</label><input type="tel" required placeholder="+51 999 999 999"></div>
+      <div><label>Contraseña</label><input type="password" required placeholder="••••••••"></div>
+      <div><label>Tipo de usuario</label><select id="userType" required><option value="">Seleccionar</option><option value="student">Estudiante</option><option value="driver">Conductor</option></select></div>
+    </div>
+    <button class="btn full" type="submit">Crear cuenta</button>
+  </form>
+  <p class="auth-bottom">¿Ya tienes una cuenta? <a href="login.html">Iniciar sesión</a></p>
+  <a class="back-link" href="index.html">← Volver al inicio</a>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
